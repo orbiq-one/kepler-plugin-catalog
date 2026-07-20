@@ -4,6 +4,7 @@
 	"plugins": [
 		{
 			"package": "@kepler-app/their-time-plugin",
+			"name": "Their Time",
 			"featured": true,
 			"verified": true,
 			"categories": ["productivity"]
