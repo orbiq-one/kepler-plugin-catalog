@@ -1,5 +1,12 @@
 {
 	"$schema": "https://raw.githubusercontent.com/orbiq-one/kepler-plugin-catalog/refs/heads/main/catalog.schema.json",
 	"schemaVersion": 1,
-	"plugins": []
+	"plugins": [
+		{
+			"package": "@kepler-app/their-time-plugin",
+			"featured": true,
+			"verified": true,
+			"categories": ["productivity"]
+		}
+	]
 }
