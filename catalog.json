@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
-  "plugins": [
-  ]
+	"$schema": "https://raw.githubusercontent.com/orbiq-one/kepler-plugin-catalog/refs/heads/main/catalog.schema.json",
+	"schemaVersion": 1,
+	"plugins": []
 }
