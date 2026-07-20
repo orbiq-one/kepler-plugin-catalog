@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://raw.githubusercontent.com/orbiq-one/kepler-plugin-catalog/main/catalog.schema.json",
+	"title": "Kepler Plugin Catalog",
+	"description": "The curated catalog of plugins available for Kepler.",
+	"type": "object",
+	"additionalProperties": false,
+	"required": ["schemaVersion", "plugins"],
+	"properties": {
+		"schemaVersion": {
+			"type": "integer",
+			"const": 1
+		},
+		"plugins": {
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/plugin"
+			}
+		}
+	},
+	"$defs": {
+		"plugin": {
+			"type": "object",
+			"additionalProperties": false,
+			"required": ["package"],
+			"properties": {
+				"package": {
+					"type": "string",
+					"minLength": 1,
+					"pattern": "^(?:@[a-z0-9][a-z0-9._-]*/)?[a-z0-9][a-z0-9._-]*$",
+					"description": "The package name on npm."
+				},
+				"featured": {
+					"type": "boolean",
+					"default": false
+				},
+				"verified": {
+					"type": "boolean",
+					"default": false
+				},
+				"categories": {
+					"type": "array",
+					"uniqueItems": true,
+					"items": {
+						"type": "string",
+						"enum": ["developer-tools", "productivity", "search", "utilities"]
+					}
+				}
+			}
+		}
+	}
+}
