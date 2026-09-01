@@ -8,6 +8,13 @@
 			"featured": true,
 			"verified": true,
 			"categories": ["productivity"]
+		},
+		{
+			"package": "@kepler-app/klack-plugin",
+			"name": "Klack",
+			"featured": true,
+			"verified": true,
+			"categories": ["utility"]
 		}
 	]
 }
