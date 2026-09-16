@@ -29,6 +29,15 @@
 			"categories": [
 				"utility"
 			]
+		},
+		{
+			"package": "kepler-appearance",
+			"name": "System Appearance Changer",
+			"featured": false,
+			"verified": true,
+			"categories": [
+				"utility"
+			]
 		}
 	]
 }
